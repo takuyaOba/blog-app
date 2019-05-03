@@ -3,7 +3,7 @@
 
   <div class="container">
     <div class="col s12 m7">
-      <h2 class="header">内容一覧</h2>
+      <h4 class="header">投稿一覧</h4>
       <% @tweets.each do |tweet| %>
       <div class="card horizontal">
         <div class="card-stacked">
@@ -11,8 +11,13 @@
             <p><%= tweet.text %></p>
           </div>
           <div class="card-action">
-            <a href="#">編集</a>
-            <a href="#">削除</a>
+            <span class="name">
+              <%= tweet.user.nickname %><span>さん</span>
+           </span>
+            <% if user_signed_in? && current_user.id == tweet.user_id %>
+              <%= link_to '編集', "/tweets/#{tweet.id}/edit", method: :get %>
+              <%= link_to '削除', "/tweets/#{tweet.id}", method: :delete %>
+            <% end %>
           </div>
         </div>
       </div>
