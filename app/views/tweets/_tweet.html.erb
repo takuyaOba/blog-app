@@ -1,0 +1,17 @@
+      <div class="card horizontal">
+        <div class="card-stacked">
+          <div class="card-content">
+            <p><%= tweet.text %></p>
+          </div>
+          <div class="card-action">
+            <span class="name">
+              <%= tweet.user.nickname %><span>さん</span>
+           </span>
+            <% if user_signed_in? && current_user.id == tweet.user_id %>
+              <%= link_to '編集', "/tweets/#{tweet.id}/edit", method: :get %>
+              <%= link_to '削除', "/tweets/#{tweet.id}", method: :delete %>
+            <% end %>
+          </div>
+        </div>
+      </div>
+      

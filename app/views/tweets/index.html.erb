@@ -1,0 +1,8 @@
+  <div class="container">
+    <div class="col s12 m7">
+      <h4 class="header">投稿一覧</h4>
+      <% @tweets.each do |tweet| %>
+        <%= render partial: "tweet", locals: { tweet: tweet } %>
+      <% end %>
+    </div>
+  </div>
