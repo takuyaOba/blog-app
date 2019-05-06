@@ -1,5 +1,5 @@
 current directory: /Users/takuya/Desktop/blog-app/vendor/bundle/ruby/2.5.0/gems/mysql2-0.5.2/ext/mysql2
-/Users/takuya/.rbenv/versions/2.5.1/bin/ruby -I /Users/takuya/.rbenv/versions/2.5.1/lib/ruby/site_ruby/2.5.0 -r ./siteconf20190504-1587-n6uk3v.rb extconf.rb --with-ldflags\=-L/usr/local/opt/openssl/lib\ --with-cppflags\=-I/usr/local/opt/openssl/include
+/Users/takuya/.rbenv/versions/2.5.1/bin/ruby -I /Users/takuya/.rbenv/versions/2.5.1/lib/ruby/site_ruby/2.5.0 -r ./siteconf20190504-5012-1lo1i5o.rb extconf.rb --with-ldflags\=-L/usr/local/opt/openssl/lib\ --with-cppflags\=-I/usr/local/opt/openssl/include
 checking for rb_absint_size()... *** extconf.rb failed ***
 Could not create Makefile due to some reason, probably lack of necessary
 libraries and/or headers.  Check the mkmf.log file for more details.  You may
